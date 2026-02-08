@@ -77,11 +77,23 @@ voicelab-web/
 - Fuer CI/CD-Workflows empfiehlt sich ein automatisiertes Sass-Build vor dem Deploy (z. B. ueber GitHub Actions oder Azure DevOps Pipelines).
 
 ## Technologie-Stack
-- HTML5, moderne Semantik und strukturierte Sections
-- Bootstrap CSS Framework fuer Responsive Design
-- Sass (SCSS-Syntax) fuer modulare Stylesheet-Architektur
-- ScrollReveal und Anime.js fuer Mikrointeraktionen und Motion Design
-- Font Awesome sowie Google Fonts fuer Icons und Typografie
+
+| Technologie | Version | Quelle | Einsatz |
+|---|---|---|---|
+| **HTML5** | – | – | Semantische Seitenstruktur, OpenGraph, JSON-LD |
+| **Bootstrap** | 5.2.1 | lokal (`dist/`) | Responsive Grid, Modale, Navbar (`index`, `ellie`) |
+| **Sass / SCSS** | – | `solid/src/scss/` | Modulare Stylesheet-Architektur (`solid`) |
+| **ScrollReveal** | 4.0.9 | CDN (unpkg) | Scroll-getriggerte Einblendanimationen (alle Seiten) |
+| **Anime.js** | 3.2.2 | CDN (unpkg) | SVG-/Motion-Animationen (nur `solid`) |
+| **Font Awesome** | Kit `0073c7b349` | CDN (kit.fontawesome.com) | Icons (`index`, `ellie`) |
+| **Google Fonts** | – | CDN (fonts.googleapis.com) | Heebo + Titillium Web (`index`, `ellie`); IBM Plex Sans (`solid`) |
+| **Fastcounter** | – | fastcounter.de (ID 37745) | Besucherstatistik (`index`, `ellie`) |
+
+> **Hinweis:** `solid/` nutzt **kein** Bootstrap und kein Font Awesome — Layouts werden dort vollstaendig ueber eigenes SCSS gesteuert.
 
 ## Lizenzhinweis
-Der "Solid"-Teil des Projekts steht unter GPL-3.0 (siehe `solid/LICENSE`). Bitte pruefe individuelle Asset-Lizenzen, bevor du Inhalte produktiv nutzt.
+- Das `solid/`-Verzeichnis steht unter der **GPL-3.0**-Lizenz (siehe `solid/LICENSE`).
+- Bootstrap ist unter der **MIT**-Lizenz lizenziert (Copyright 2011–2022 The Bootstrap Authors & Twitter, Inc.).
+- Anime.js ist unter der **MIT**-Lizenz lizenziert.
+- ScrollReveal ist unter der **GPL-3.0**-Lizenz lizenziert (nicht-kommerzielle Nutzung; kommerzielle Nutzung erfordert eine separate Lizenz).
+- Die uebrigen Projektdateien unterliegen dem Copyright des Autors. Fuer Details bitte die jeweiligen Header in den Quelldateien beachten.
