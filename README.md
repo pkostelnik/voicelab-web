@@ -1,39 +1,58 @@
 # VoiceLAB Web
 
-> Multi-Landingpages fuer VoiceLAB-Content, persoenliche Projekte und technische How-tos.
+> Infosite rund um den Aufbau eines Voice-Targeting-LABs — lokal in Hyper-V und in der Cloud auf Azure.  
+> Gehostet unter [https://www.voicelab.ovh](https://www.voicelab.ovh/)
+
+**Autor:** Pawel Kostelnik · Niederkassel, Germany  
+**Copyright:** 2022 – 2026
 
 ![VoiceLAB Hero Illustration](solid/src/images/hero-top-illustration.svg)
 
 ## Inhaltsverzeichnis
-- Highlights
-- Projektstruktur
-- Schnellstart
-- Lokale Entwicklung
-- Anpassung
-- Deployment
-- Technologie-Stack
-- Lizenzhinweis
+- [Highlights](#highlights)
+- [Projektstruktur](#projektstruktur)
+- [Schnellstart](#schnellstart)
+- [Lokale Entwicklung](#lokale-entwicklung)
+- [Anpassung](#anpassung)
+- [Deployment](#deployment)
+- [Technologie-Stack](#technologie-stack)
+- [Lizenzhinweis](#lizenzhinweis)
 
 ## Highlights
 - Drei eigenstaendige Landingpages (`index.html`, `ellie/`, `solid/`) fuer unterschiedliche Stories und Zielgruppen
-- Responsives Layout auf Basis von Bootstrap, optimiert fuer Desktop, Tablet und Mobile
+- Responsives Layout auf Basis von Bootstrap 5, optimiert fuer Desktop, Tablet und Mobile
 - Sanfte Motion-Effekte mit ScrollReveal und Anime.js fuer eine moderne User Experience
+- Eingebettete PowerShell-Skripte (Modale) fuer Hyper-V VM-Provisionierung, AD DS Setup, Domain-Join und OOS-Voraussetzungen
 - Strukturierte Sass-Teilstuecke in `solid/src/scss` erleichtern Branding- und Theme-Anpassungen
+- SEO-Grundausstattung: OpenGraph, Twitter Cards, JSON-LD (Schema.org), Canonical URLs
+- Besucherstatistik via Fastcounter (datenschutzkonform dokumentiert)
 - Produktionsfertige Assets in den jeweiligen `dist/`-Ordnern fuer schnelle Bereitstellung
 
 ## Projektstruktur
 ```text
 voicelab-web/
-|-- index.html            # Haupt-Landingpage
-|-- ellie/
-|   |-- index.html        # Alternative Landingpage "Ellie"
-|   `-- dist/             # Kompilierte Ellie-Assets
-`-- solid/
-    |-- index.html        # Landingpage "Solid"
-    |-- dist/             # Ausgelieferte CSS- und JS-Dateien
-    `-- src/
-        |-- js/main.js    # Animations-Logik
-        `-- scss/         # Sass-Quellcode in Modulen
+├── index.html              # Haupt-Landingpage (inkl. Impressum, Datenschutz, PS-Skript Modale)
+├── .gitignore              # Git-Ausschluesse (DS_Store, Synology-Konflikte, node_modules …)
+├── README.md
+├── ellie/
+│   ├── index.html          # Alternative Landingpage "Ellie"
+│   └── dist/               # Kompilierte Ellie-Assets (Bootstrap, CSS, JS)
+└── solid/
+    ├── index.html           # Landingpage "Solid" (Template-Showcase)
+    ├── LICENSE              # GPL-3.0
+    ├── CHANGELOG.md
+    ├── README.md
+    ├── dist/                # Ausgelieferte CSS- und JS-Dateien
+    └── src/
+        ├── images/          # SVG-Illustrationen & Feature-Icons
+        ├── js/main.js       # ScrollReveal + Anime.js Animations-Logik
+        └── scss/            # Sass-Quellcode in Modulen
+            ├── style.scss           # Haupt-Einstiegsdatei
+            ├── _normalize.scss
+            ├── abstracts/           # Variablen, Mixins, Funktionen
+            ├── base/                # Basis-Styles, Typografie, Helfer
+            ├── components/          # Buttons, Formulare
+            └── layout/              # Hero, Features, Pricing, CTA, Footer …
 ```
 
 ## Schnellstart
