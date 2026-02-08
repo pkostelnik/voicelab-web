@@ -22,22 +22,17 @@
   <meta name="title" content="VoiceLAB site von Pawel Kostelnik." />
   <meta name="author" content="Pawel Kostelnik" />
   <meta name="publisher" content="Pawel Kostelnik" />
-  <meta name="copyright" content="Pawel Kostelnik 2022" />
+  <meta name="copyright" content="Pawel Kostelnik 2022-2026" />
   <meta name="revisit-after" content="after 20 days" />
   <meta name="date" content="2022-09-23" />
   <meta name="expires" content="0" />
   <meta name="generator" content="Microsoft Visual Studio Code" />
-  <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <link rel="canonical" href="http://www.voicelab.ovh/" />
+  <link rel="canonical" href="https://www.voicelab.ovh/" />
 
   <!-- OpenGraph -->
   <meta property="og:title" content="Pawel Kostelnik" />
-  <meta property="og:type" content="text/html" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.voicelab.ovh/" />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:description"
     content="VoiceLAB site von Pawel Kostelnik." />
@@ -61,27 +56,16 @@
   <meta name="twitter:title" content="Pawel Kostelnik" />
   <meta name="twitter:description"
     content="VoiceLAB site von Pawel Kostelnik." />
-  <meta name="twitter:image" content="" />
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="">
-
-  <!-- Apple Settings -->
-  <link rel="apple-touch-icon" href="">
-  <link rel="apple-touch-icon" sizes="76x76" href="">
-  <link rel="apple-touch-icon" sizes="120x120" href="">
-  <link rel="apple-touch-icon" sizes="152x152" href="">
-  <link rel="apple-touch-startup-image" href="">
   <meta name="apple-mobile-web-app-title" content="Voicelab Pawel Kostelnik">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <title>VoiceLAB - Website</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://kit.fontawesome.com/0073c7b349.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="is-boxed">
@@ -132,10 +116,11 @@
 						<div class="hero-copy">
 							<h1 class="hero-title mt-0 is-revealing">Infosite for my VoiceLAB</h1>
 							<p class="hero-paragraph is-revealing">Here you will find some/several Informations on HowTo
-								setup a voicetargetting LAB.<br>I'm going to provide Informations for:<br>
-								<li> Local setup in Hyper-V</li>
+								setup a voicetargetting LAB.<br>I'm going to provide Informations for:</p>
+							<ul class="hero-paragraph is-revealing">
+								<li>Local setup in Hyper-V</li>
 								<li>Setup on Azure</li>
-							</p>
+							</ul>
 							<!--							<div class="hero-form field field-grouped is-revealing">
 	                            <div class="control control-expanded">
 	                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
@@ -753,11 +738,11 @@
 		</footer>
 	</div>
     <!-- Modal / Impressum -->
-    <div class="modal fade" id="impressum" role="dialog" tabindex="-1" aria-labelledby="impressum">
+    <div class="modal fade" id="impressum" role="dialog" tabindex="-1" aria-labelledby="impressumTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
                 <div class="modal-title text-center">
-                    <h4>Impressum</h4></div>
+                    <h4 id="impressumTitle">Impressum</h4></div>
                 <p><i class="fa fa-address-card">&nbsp;</i> Pawel Kostelnik<br>
                     <i class="fa fa-home">&nbsp;</i> Burgstr. 39<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;53859 Niederkassel
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NRW, Germany</p>
@@ -787,11 +772,11 @@
     </div>
 
     <!-- Modal / Datenschutz -->
-    <div class="modal fade" id="dsgvo" role="dialog" tabindex="-1" aria-labelledby="dsgvo">
+    <div class="modal fade" id="dsgvo" role="dialog" tabindex="-1" aria-labelledby="dsgvoTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
                 <div class="modal-title text-center">
-                    <h4>Datenschutz</h4></div>
+                    <h4 id="dsgvoTitle">Datenschutz</h4></div>
                 <p><b>1. Datenschutz auf einen Blick</b><br>
                 </p>
                 <u>Allgemeine Hinweise</u>
@@ -918,10 +903,10 @@
     </div>
 
 	<!-- Modal / create VM's #create -->
-	<div class="modal fade" id="create" role="dialog" tabindex="-1" aria-labelledby="create">
+	<div class="modal fade" id="create" role="dialog" tabindex="-1" aria-labelledby="createTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
-                <div class="modal-title text-center"> VM Prepopulation </div>
+                <div class="modal-title text-center" id="createTitle"> VM Prepopulation </div>
 				<div class="modal-body">
 					<pre>
 						<code>
@@ -1090,10 +1075,10 @@ $VM = ""
     	</div>
 	</div>
 	<!-- Modal / Setup DC #firstdc -->
-	<div class="modal fade" id="firstdc" role="dialog" tabindex="-1" aria-labelledby="firstdc">
+	<div class="modal fade" id="firstdc" role="dialog" tabindex="-1" aria-labelledby="firstdcTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
-                <div class="modal-title text-center">setup domain and forest</div>
+                <div class="modal-title text-center" id="firstdcTitle">setup domain and forest</div>
 				<div class="modal-body">
 					<pre>
 						<code>
@@ -1103,8 +1088,8 @@ $VM = ""
 
 $Domain = "SFB15.lab"
 $NetBIOS = "SFB15"
-$Safemodepass = "yourpasswordhere"
-$SecureSafeMmodePass = ConvertTo-SecureString $Safemodepass -AsPlainText -Force
+# Passwort sicher abfragen (nicht im Klartext speichern!)
+$SecureSafeMmodePass = Read-Host -Prompt "Enter SafeMode Administrator Password" -AsSecureString
 
 Install-WindowsFeature AD-Domain-Services -IncludeAllSubFeature -IncludeManagementTools
 
@@ -1129,10 +1114,10 @@ Install-ADDSForest `
         </div>
     </div>
 	<!-- Modal / rename and domainjoin #rename -->
-	<div class="modal fade" id="rename" role="dialog" tabindex="-1" aria-labelledby="rename">
+	<div class="modal fade" id="rename" role="dialog" tabindex="-1" aria-labelledby="renameTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
-                <div class="modal-title text-center">rename and join domain</div>
+                <div class="modal-title text-center" id="renameTitle">rename and join domain</div>
 				<div class="modal-body">
 					<pre>
 						<code>
@@ -1149,10 +1134,10 @@ Add-Computer -DomainName $Domain -Server "$DC.$Domain" -ComputerName "$env:COMPU
         </div>
     </div>
 	<!-- Modal / OOS prerequisites #oospre -->
-	<div class="modal fade" id="oospre" role="dialog" tabindex="-1" aria-labelledby="oospre">
+	<div class="modal fade" id="oospre" role="dialog" tabindex="-1" aria-labelledby="oospreTitle">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content px-2">
-                <div class="modal-title text-center">OOS prerequisites setup</div>
+                <div class="modal-title text-center" id="oospreTitle">OOS prerequisites setup</div>
 				<div class="modal-body">
 					<pre>
 						<code>

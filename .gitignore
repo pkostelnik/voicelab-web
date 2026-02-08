@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Synology NAS conflict files
+*_DiskStation_*_DownloadConflict.*
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node (falls Build-Prozess genutzt wird)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Sass cache
+.sass-cache/
+*.css.map
