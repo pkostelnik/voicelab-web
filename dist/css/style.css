@@ -1,11 +1,19 @@
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
-}
-
-body {
-	margin: 0
 }
 
 article,
@@ -1307,6 +1315,31 @@ label {
 
 .button-block {
 	display: flex
+}
+
+.modal-content {
+	background: rgba(30, 31, 33, 0.7) !important;
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	border-radius: 12px;
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: rgba(20, 21, 22, 0.6);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	padding: 16px 0;
+	transition: all 0.3s ease;
+}
+
+.site-header.is-scrolled {
+	padding: 12px 0;
+	background: rgba(20, 21, 22, 0.8);
 }
 
 .site-header {
