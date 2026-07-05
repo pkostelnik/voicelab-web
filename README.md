@@ -3,8 +3,7 @@
 > Infosite rund um den Aufbau eines Voice-Targeting-LABs — lokal in Hyper-V und in der Cloud auf Azure.  
 > Gehostet unter [https://www.voicelab.ovh](https://www.voicelab.ovh/)
 
-**Autor:** Pawel Kostelnik · Niederkassel, Germany  
-**Copyright:** 2022 – 2026
+**Autor:** Pawel Kostelnik · Niederkassel, Germany
 
 ![VoiceLAB Hero Illustration](solid/src/images/hero-top-illustration.svg)
 
